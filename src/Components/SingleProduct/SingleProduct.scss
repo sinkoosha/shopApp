@@ -1,0 +1,24 @@
+.containerP {
+  background-color: #ddd;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.productDetails {
+  flex: 1;
+}
+.productSlider {
+  flex: 1;
+}
+.sectionBox {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.productDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionTitle {
+  flex: 1;
+}

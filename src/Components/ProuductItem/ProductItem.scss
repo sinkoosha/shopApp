@@ -1,0 +1,119 @@
+.Card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+}
+.CardBody {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  background-color: white;
+}
+.cardFooter {
+  background: #42567b;
+  border-radius: 0px 0px 16px 16px;
+  width: 100%;
+  cursor: pointer;
+}
+.cardBodyTitle {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.cardBodyImage {
+  position: relative;
+  top: -7px;
+  padding: 10px;
+  padding-top: 20px;
+}
+
+.cardBodyPrice {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+.cardPriceBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #a71e34;
+}
+.cardBodyImage {
+  width: 300px;
+  height: 300px;
+}
+.cardBodyPrice {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+.cardBody {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: var(--shadow);
+}
+.CardBasketCount {
+  background: #001845;
+  background-color: rgb(0, 24, 69);
+  border-radius: 0px 0px 16px 16px;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 5px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.BasketCountIcon {
+  background-color: #a71e34;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  color: white;
+  padding: 0px;
+  height: 20px;
+
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  line-height: 24px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.cardBasketLink {
+  background: #001845;
+  border-radius: 0px 0px 16px 16px;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 5px 0px;
+  cursor: pointer;
+}
+.cardDiscountBox {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.displayN {
+  display: none;
+}
