@@ -23,7 +23,6 @@ function App() {
             <Route path="/p/:id" element={<SingleProduct />} />
             <Route path="/login" element={<Login />} />
             <Route path="/Cards" element={<CardPage />} />
-
             <Route path="*" element={<PageNotFound />} />
           </Routes>
         </BrowserRouter>

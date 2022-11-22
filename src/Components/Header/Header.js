@@ -59,6 +59,13 @@ function Header() {
         <div class="mainHeader">
           <div class="logo">
             <h1>SHOPING APP</h1>
+            <div class="MUPRA_Basket_Mobile">
+              <button>
+                <Link to="/cards">
+                  BASKET<span>{cardQty(pCard)}</span>{" "}
+                </Link>
+              </button>
+            </div>
           </div>
 
           <div class="MUPRA_Main_menu">
@@ -121,7 +128,9 @@ function Header() {
           </div>
           <div class="MUPRA_Basket">
             <button>
-              BASKET<span>{cardQty(pCard)}</span>{" "}
+              <Link to="/cards">
+                BASKET<span>{cardQty(pCard)}</span>{" "}
+              </Link>
             </button>
           </div>
         </div>

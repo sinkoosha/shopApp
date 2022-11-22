@@ -22,3 +22,12 @@
 .sectionTitle {
   flex: 1;
 }
+@media (max-width: 790px) {
+  .containerP {
+    background-color: #ddd;
+    padding: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}

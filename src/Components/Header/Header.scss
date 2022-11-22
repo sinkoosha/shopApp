@@ -76,20 +76,7 @@
   top: 10px;
   right: 17px;
 }
-.logo span {
-  padding: 2px 18px;
-  position: absolute;
-  top: 27px;
-  background-color: rgba(73, 212, 174, 0.2);
-  border-radius: 10px 10px 10px 0px;
-  color: #49d4ae;
-  font-family: YekanBakh;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
 
-  left: 2;
-}
 .MUPRA_Basket {
   display: flex;
   justify-content: center;
@@ -210,9 +197,80 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none;
 }
+.MUPRA_Basket a {
+  color: whitesmoke;
+}
 
 .logo h1 {
   font-size: 20px !important;
   padding: 0px;
   margin: 0px;
+}
+.MUPRA_Basket_Mobile {
+  display: none;
+}
+@media (max-width: 790px) {
+  .MUPRA_Basket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+  .catBox {
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    margin: 0 auto !important;
+    width: 100%;
+
+    max-width: 247px;
+  }
+  .MUPRA_Basket_Mobile {
+    display: flex;
+  }
+  .catBox {
+    max-width: 400px;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    margin: 0 auto !important;
+  }
+  .MUPRA_Basket_Mobile button {
+    background: none;
+    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    background-color: #001845c2;
+    padding: 9px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: YekanBakh !important;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    margin-right: 20px;
+    color: white;
+  }
+
+  .MUPRA_Basket_Mobile span {
+    background-color: #001845;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    color: white;
+    margin-right: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-left: 11px;
+  }
+
+  .logo {
+    flex-direction: row;
+  }
 }

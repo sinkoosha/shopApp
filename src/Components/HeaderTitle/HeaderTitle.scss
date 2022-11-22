@@ -1,7 +1,16 @@
-.HeaderTitle {
-  background: var(--primary);
+.HeaderTitle h1 {
+  padding: 0px;
+  margin: 0pc;
+  z-index: 222;
+  background-color: #fff;
+  position: relative;
+  display: inline;
+  width: 146px;
 
-  padding: 1.5rem 2rem;
-  box-shadow: var(--shadow);
-  border-radius: 5px;
+  padding: 30px;
+}
+
+.HeaderTitle hr {
+  position: relative;
+  top: -25px;
 }

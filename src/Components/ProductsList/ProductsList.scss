@@ -10,3 +10,33 @@
   justify-content: space-around;
   width: 100%;
 }
+@media (max-width: 790px) {
+  .boxes {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, auto);
+  }
+  .boxes {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, auto);
+  }
+  .mainHeader {
+    display: flex;
+
+    flex-direction: column;
+    width: 100%;
+  }
+  .MUPRA_Menu_TOP {
+    display: none;
+  }
+
+  .logo h1 {
+    text-align: center;
+    width: 100%;
+  }
+  .cardBodyImage {
+    width: 100%;
+    height: auto;
+  }
+}
