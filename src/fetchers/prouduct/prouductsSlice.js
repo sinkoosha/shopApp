@@ -1,14 +1,15 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import { json } from "react-router-dom";
 
 import prouductApi from "../../common/api/prouductApi";
-
+const ProductCard = JSON.parse(localStorage.getItem("cards"));
 const initialState = {
   products: [],
   cats: [],
   status: null,
   productCat: [],
   singleProduct: [],
-  cards: [],
+  cards: ProductCard || [],
 };
 
 export const fetchAllprouducts = createAsyncThunk(
@@ -65,6 +66,10 @@ const proudctSlice = createSlice({
             ...state.cards,
             { ...action.payload, qty: 1 },
           ];
+          localStorage.setItem(
+            "cards",
+            JSON.stringify(state.cards)
+          );
         } else {
           state.cards = state.cards.map((item) =>
             item.id === action.payload.id
@@ -72,6 +77,10 @@ const proudctSlice = createSlice({
               : item
           );
         }
+        localStorage.setItem(
+          "cards",
+          JSON.stringify(state.cards)
+        );
       },
       prepare(item) {
         return { payload: item };
@@ -86,11 +95,19 @@ const proudctSlice = createSlice({
           state.cards = state.cards.filter(
             (item) => item.id !== action.payload
           );
+          localStorage.setItem(
+            "cards",
+            JSON.stringify(state.cards)
+          );
         } else {
           state.cards = state.cards.map((item) =>
             item.id === action.payload
               ? { ...item, qty: item.qty - 1 }
               : item
+          );
+          localStorage.setItem(
+            "cards",
+            JSON.stringify(state.cards)
           );
         }
       },

@@ -20,6 +20,7 @@ function SingleProduct() {
     dispatch(fetchSingleprouduct(itemId));
   }, []);
   const SingleProduct = useSelector(singleProduct);
+  console.log("single", SingleProduct);
   return (
     <>
       <Header />
@@ -52,7 +53,7 @@ function SingleProduct() {
               </div>
             </div>
             <div className="sectionBox">
-              <CardButton item={singleProduct} />
+              <CardButton item={SingleProduct} />
             </div>
           </div>
           <div className="productSlider">

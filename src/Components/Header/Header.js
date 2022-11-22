@@ -19,9 +19,10 @@ function Header() {
     scrollLeft: null,
     pageX: null,
   });
+  // const cardsString = localStorage.getItem("cards");
+  // const pCard = JSON.parse(cardsString);
   const pCard = useSelector(productsCard);
 
-  console.log(pCard);
   const catBoxRef = useRef();
   const handelMouseLeave = () => {
     setScrollStatus({
