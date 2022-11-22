@@ -78,26 +78,19 @@ function Header() {
                   </a>
                 </li>
                 <li>
-                  <a href="#">HOME</a>
-                </li>
-                <li>
-                  <a href="#">ABOUT US</a>
+                  <Link to="/">Home</Link>
                 </li>
               </ul>
               <ul class="MUPRA_MENU_LS">
                 <li>
-                  <a href="#">
+                  <a href="/">
                     {" "}
                     <img src={search} />
                     Search
                   </a>
                 </li>
                 <li>
-                  <a href="#">
-                    {" "}
-                    {/* <img /> */}
-                    Login
-                  </a>
+                  <Link to="/login" />
                 </li>
               </ul>
             </nav>
